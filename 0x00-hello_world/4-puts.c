@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- * main - Entry
+ * main - print the string in the put function
+ *
  * Return: Always 0
  */
 int main(void)
