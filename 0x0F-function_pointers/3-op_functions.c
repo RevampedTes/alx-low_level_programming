@@ -1,11 +1,11 @@
 #include "calc.h"
 
 /**
- * op_add - adds @a and @b and returns the sum
+ * op_add - calculates the sum of two integers
+ * @a: first integer
+ * @b: second integer
  *
- * @a: the first argument
- * @b: the second argument
- * Return: the sum of @a and @b
+ * Return: sum of a and b
  */
 int op_add(int a, int b)
 {
@@ -13,10 +13,23 @@ int op_add(int a, int b)
 }
 
 /**
- * op_sub - subtracts @b from @a and returns the difference
- * @a: the first argument
- * @b: the second argument
- * Return: the difference between @a and @b
+ * op_sub - calculates the difference of two integers
+ * @a: first integer
+ * @b: second integer
+ *
+ * Return: difference of a and b
+ */
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
+
+/**
+ * op_mul - calculates the product of two integers
+ * @a: first integer
+ * @b: second integer
+ *
+ * Return: product of a and b
  */
 int op_mul(int a, int b)
 {
@@ -24,33 +37,25 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_div - divides @a by @b and returns the result
- * @a: the first argument
- * @b: the second argument
- * Return: @a divided by @b
+ * op_div - calculates the division of two integers
+ * @a: first integer
+ * @b: second integer
+ *
+ * Return: result of the division of a and b
  */
 int op_div(int a, int b)
 {
-	if (!b)
-	{
-		printf("Error\n");
-		exit(100);
-	}
 	return (a / b);
 }
 
 /**
- * op_mod - divides @a by @b and returns the remainder
- * @a: the first argument
- * @b: the second argument
- * Return: the modulo of @a and @b
+ * op_mod - calculates the remainder of the division of two integers
+ * @a: first integer
+ * @b: second integer
+ *
+ * Return: remainder of a divided b
  */
 int op_mod(int a, int b)
 {
-	if (!b)
-	{
-		printf("Error\n");
-		exit(100);
-	}
 	return (a % b);
 }
